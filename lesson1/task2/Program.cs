@@ -4,35 +4,17 @@
 // 22 3 9 -> 22
 
 Console.WriteLine("Введите первое число");
-int numberA = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите второе число");
-int numberB = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите третье число");
-int numberC = Convert.ToInt32(Console.ReadLine());
+int c = Convert.ToInt32(Console.ReadLine());
 
-if (numberA > numberB)
-{
-    Console.WriteLine(numberA);
-}
+ if (a > b && a > c)
+Console.WriteLine("Nubmer Max = " + a); 
+else if (b > c)
+Console.WriteLine("Number Max = " + b); 
 else
-{
-    Console.WriteLine(numberB);
-}
-if (numberB > numberC)
-{
-    Console.WriteLine(numberB);
-}
-else
-{
-    Console.WriteLine(numberC);
-}
-if (numberC > numberA)
-{
-    Console.WriteLine(numberC);
-}
-else
-{
-    Console.WriteLine(numberA);
-}
+Console.WriteLine("Number Max = " + c); 
