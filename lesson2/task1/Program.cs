@@ -2,5 +2,12 @@
 
 Console.WriteLine("Введите трёхзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
-int digit = number % 100 / 10;
-Console.WriteLine(digit);
+int amount = number.ToString().Length;
+if (amount<3 || amount>3)
+{
+    Console.WriteLine("Ввели не трехзначное число");
+}
+else
+{
+    Console.WriteLine((number/10)%10);
+}
