@@ -12,6 +12,10 @@ if (amount<3)
 }
 else 
 {
+    int c = 1;
     for (int i = amount; i > 3; i--)
-    Console.WriteLine ((number / 10) % 10);
+    {
+        c = c * 10;
+    }
+    Console.WriteLine ((number / c) % 10);
 }
